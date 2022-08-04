@@ -1,0 +1,165 @@
+@import url("http://fonts.cdnfonts.com/css/rossela");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  font-family: "ROSSELA", sans-serif;
+  text-transform: uppercase;
+}
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+.main-noise {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100vh;
+  background: transparent;
+  pointer-events: none;
+}
+.noise {
+  z-index: 999999999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.13;
+}
+
+.cursor {
+  position: fixed;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999999999999999;
+}
+
+.menu__logo {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+}
+.logo {
+  top: 0;
+  left: 0;
+  padding: 40px;
+  position: absolute;
+  color: #dfe8e0;
+  font-weight: bolder;
+}
+p.menu__open {
+  top: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-top: 40px;
+  font-size: 20px;
+  position: fixed;
+  text-decoration: underline;
+  color: #dfe8e0;
+}
+
+.menu_open,
+.menu_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.nav_container {
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #dfe8e0;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -ms-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -o-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 999999;
+}
+
+.menu {
+  padding: 12vh 0 24vh;
+  z-index: 9999999999998;
+}
+
+.menu__links {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  font-size: 5vw;
+  transition: opacity 0.1s;
+  /* line-height: 150px; */
+  -webkit-transition: opacity 0.1s;
+  -moz-transition: opacity 0.1s;
+  -ms-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+}
+
+.menu__img {
+  position: relative;
+  top: 10px;
+  padding: 0 40px;
+  z-index: 2;
+  pointer-events: none;
+  height: 10vh;
+  max-height: 600px;
+  opacity: 1;
+  transform: scale(0);
+}
+
+.menu__item {
+  margin-top: 50px;
+}
+.menu__item:hover > .menu__img {
+  transform: scale(2);
+  transition: all 0.3s;
+}
+.menu__item:hover > a {
+  text-decoration: line-through;
+}
+
+@media (max-width: 900px) {
+  .menu__links {
+    font-size: 8vw;
+    line-height: 70px;
+  }
+}
+@media (max-width: 800px) {
+  .cursor {
+    width: 0;
+    height: 0;
+    border: 0;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 500vh;
+  background-color: #1f1f1f;
+  padding-top: 70px;
+}
+
+.container p {
+  color: #fff;
+  width: 50%;
+  font-size: 14px;
+  font-style: oblique;
+}
