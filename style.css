@@ -41,17 +41,18 @@ span {
   height: 110vh;
 }
 .loader-wrap .loader-wrap-heading h1 {
-  font-size: 120px;
+  position: absolute;
   z-index: 20;
   color: #e0e0e0;
   text-transform: uppercase;
   font-weight: lighter;
   font-family: "Ogg";
+  left: 200px;
+  top: 200px;
 }
 .loader-wrap .loader-wrap-heading h3 {
   font-size: 50px;
   z-index: 20;
-  margin-top: -50px;
   text-align: center;
   color: #e0e0e0;
   text-transform: uppercase;

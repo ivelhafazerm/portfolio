@@ -30,22 +30,18 @@ window.addEventListener("mousemove", moveCursor);
 
 tl.from(".loader-wrap-heading h1", {
   delay: 1,
-  y: -250,
+  y: 50,
   opacity: 0,
   duration: 1.3,
-})
-  .to(
-    ".loader-wrap-heading h1",
-    {
-      opacity: 0,
-    },
-    5
-  )
-  .from(".loader-wrap-heading h3", {
-    y: 250,
-    opacity: 0,
-    duration: 1.3,
-  });
+}).to(".loader-wrap-heading h1", {
+  y: 0,
+  opacity: 1,
+});
+tl.from(".loader-wrap-heading h3", {
+  y: 250,
+  opacity: 0,
+  duration: 1.3,
+});
 
 //!
 function enter() {
