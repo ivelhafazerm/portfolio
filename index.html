@@ -4,21 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Port</title>
+    <title>Ivelhafazerm</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <noise role="main" class="main-content">
-      <canvas id="noise" class="noise"></canvas>
-    </noise>
+    <div class="loader-wrap">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
 
+      <div class="loader-wrap-heading">
+        <span>
+          <h1>Welcome</h1>
+          <h3 onclick="enter()">ENTER</h>
+        </span>
+      </div>
+    </div>
     <!-- cursor -->
     <div class="cursor"></div>
     <!-- Menu Navbar -->
     <div class="menu__logo">
-      <div class="logo">Ivelhafazerm</div>
+      <div class="logo"><h1>Ivelhafazerm</h1></div>
       <div class="menu_open">
-        <p class="menu__open">Menu</p>
+        <p class="menu__open">
+          <span></span>
+          <span class="more"></span>
+          <span></span>
+        </p>
+      </div>
+    </div>
+    <!-- ! -->
+    <div class="container-left">
+      <div class="wrapper">
+        <div class="links">
+          <div class="menu">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-github"></ion-icon>
+        </div>
+        <div class="line-links"></div>
+
+      </div>
       </div>
     </div>
     <!-- Menu Overlay -->
@@ -43,16 +69,18 @@
         </div>
       </nav>
     </div>
-
-    <div class="container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore quia, nam repellat quo quam explicabo sapiente rerum inventore ipsam iste dolor voluptatibus, suscipit deleniti excepturi? Provident ab adipisci eius esse
-        ipsa at doloremque magnam saepe iusto, aspernatur eos sit maiores minus unde dignissimos quibusdam assumenda incidunt voluptates maxime hic.
-      </p>
+    <div class="main-container">
+      <div class="main-wrapper">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero porro architecto quaerat. Perferendis tempore illo atque et iusto fugiat architecto, quaerat, exercitationem error aliquam eos quae accusamus totam, sint dolores dicta aliquid incidunt nihil fuga officiis sequi veniam laborum quos magnam. Earum reprehenderit aperiam dolor ipsa culpa optio dolorum iure!</h1>
+      </div>
     </div>
 
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js.js"></script>
   </body>
 </html>
