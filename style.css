@@ -8,75 +8,13 @@
 }
 html,
 body {
-  overflow: hidden;
   scroll-behavior: smooth;
-  /* cursor: none; */
 }
 body {
   background-color: #e0e0e0;
 }
 *::-webkit-scrollbar {
   display: none;
-}
-
-span {
-  overflow: hidden;
-  display: block;
-}
-.loader-wrap {
-  position: absolute;
-  z-index: 10;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-}
-.loader-wrap svg {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 110vh;
-}
-.loader-wrap .loader-wrap-heading h1 {
-  position: absolute;
-  z-index: 20;
-  color: #e0e0e0;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-family: "Ogg";
-  left: 200px;
-  top: 200px;
-}
-.loader-wrap .loader-wrap-heading h3 {
-  font-size: 50px;
-  z-index: 20;
-  text-align: center;
-  color: #e0e0e0;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-family: "Ogg";
-  text-decoration: underline;
-  cursor: pointer;
-  letter-spacing: 10px;
-}
-
-.cursor {
-  position: fixed;
-  left: -20px;
-  width: 20px;
-  height: 20px;
-  background-color: #000;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999999999999999;
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
-  -ms-transition: 0.1s;
-  -o-transition: 0.1s;
 }
 
 .menu__logo {
@@ -116,7 +54,10 @@ p.menu__open {
   width: 25px;
   height: 3px;
   margin-bottom: 3px;
+  overflow: hidden;
+  display: block;
 }
+
 .menu__open > .more {
   width: 30px;
 }
@@ -161,11 +102,6 @@ p.menu__open {
   display: inline-block;
   font-size: 5vw;
   transition: opacity 0.1s;
-  /* line-height: 150px; */
-  -webkit-transition: opacity 0.1s;
-  -moz-transition: opacity 0.1s;
-  -ms-transition: opacity 0.1s;
-  -o-transition: opacity 0.1s;
 }
 
 .menu__img {
@@ -179,18 +115,27 @@ p.menu__open {
   opacity: 1;
   transform: scale(0);
 }
-
+.menu-left {
+}
 .menu__item {
   margin-top: 50px;
   margin-right: 200px;
   margin-left: 200px;
 }
 .menu__item:hover > .menu__img {
-  transform: scale(2);
+  transform: scale(4);
   transition: all 0.3s;
 }
 .menu__item:hover > a {
   text-decoration: line-through;
+}
+.menu__item:hover > .menu-left {
+  transition: all 0.3s ease;
+  transform: translateX(-50px);
+}
+.menu__item:hover > .menu-right {
+  transition: all 0.3s ease;
+  transform: translateX(50px);
 }
 
 .container-left {
@@ -234,26 +179,17 @@ ion-icon {
   height: 200vh;
 }
 
-@media (max-width: 769px) {
-  .loader-wrap svg {
-    width: 200vw;
-    margin-left: -50vw;
-  }
-  .loader-wrap .loader-wrap-heading h1 {
-    font-size: 25px;
-  }
-  .cursor {
-    display: none;
-  }
+.section {
+  width: 100%;
+  height: 100vh;
 }
 
-@media (max-width: 900px) {
-  .loader-wrap .loader-wrap-heading h1 {
-    font-size: 40px;
-  }
+.green {
+  background-color: green;
 }
-@media (min-width: 901px) {
-  .loader-wrap .loader-wrap-heading h1 {
-    font-size: 75px;
-  }
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
 }

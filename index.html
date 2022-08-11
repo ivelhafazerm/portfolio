@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="loader-wrap">
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-      </svg>
-
-      <div class="loader-wrap-heading">
-        <span>
-          <h1>Welcome</h1>
-          <h3 onclick="enter()">ENTER</h>
-        </span>
-      </div>
-    </div>
-    <!-- cursor -->
-    <div class="cursor"></div>
     <!-- Menu Navbar -->
     <div class="menu__logo">
       <div class="logo"><h1>Ivelhafazerm</h1></div>
@@ -33,49 +19,48 @@
         </p>
       </div>
     </div>
-    <!-- ! -->
-    <div class="container-left">
-      <div class="wrapper">
-        <div class="links">
-          <div class="menu">
-          <ion-icon name="logo-instagram"></ion-icon>
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-github"></ion-icon>
-        </div>
-        <div class="line-links"></div>
-
-      </div>
-      </div>
-    </div>
     <!-- Menu Overlay -->
     <div class="nav_container">
       <div class="menu_close">Close</div>
       <nav class="menu">
         <div class="menu__item item1">
-          <a href="#" class="menu__links">Home</a>
+          <a href="#" class="menu__links menu-left">Home</a>
           <img src="./img/img1.jpg" class="menu__img" alt="" />
         </div>
         <div class="menu__item item2">
           <img src="./img/img2.jpg" class="menu__img" alt="" />
-          <a href="#" class="menu__links">Project</a>
+          <a href="#" class="menu__links menu-right">Project</a>
         </div>
         <div class="menu__item item3">
-          <a href="#" class="menu__links">About</a>
+          <a href="#" class="menu__links menu-left">About</a>
           <img src="./img/img3.jpg" class="menu__img" alt="" />
         </div>
         <div class="menu__item item4">
           <img src="./img/img4.jpg" class="menu__img" alt="" />
-          <a href="#" class="menu__links">Contact</a>
+          <a href="#" class="menu__links menu-right">Contact</a>
         </div>
       </nav>
     </div>
-    <div class="main-container">
-      <div class="main-wrapper">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero porro architecto quaerat. Perferendis tempore illo atque et iusto fugiat architecto, quaerat, exercitationem error aliquam eos quae accusamus totam, sint dolores dicta aliquid incidunt nihil fuga officiis sequi veniam laborum quos magnam. Earum reprehenderit aperiam dolor ipsa culpa optio dolorum iure!</h1>
+    <!-- ! -->
+    <div class="container-left">
+      <div class="wrapper">
+        <div class="links">
+          <div class="menu">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+          </div>
+          <div class="line-links"></div>
+        </div>
       </div>
     </div>
-
-
+    <div class="main-container">
+      <div class="main-wrapper">
+        <section class="section hero green"></section>
+        <section class="section blue"></section>
+        <section class="section red"></section>
+      </div>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
