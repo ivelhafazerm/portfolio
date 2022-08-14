@@ -2,28 +2,6 @@ const tl = gsap.timeline();
 
 //! disable right click
 window.addEventListener("contextmenu", (e) => e.preventDefault());
-
-//! Container animate from here!!!
-tl.from(".menu__logo", {
-  opacity: 0,
-  ease: "power2.easeOut",
-  y: -250,
-  duration: 1.3,
-});
-tl.from(".container-left", {
-  opacity: 0,
-  ease: "power2.easeOut",
-  y: 200,
-  duration: 1.3,
-});
-// * Main Container Animation
-tl.from(".main-wrapper h1", {
-  opacity: 0,
-  y: -250,
-  ease: "power3.out",
-  duration: 2,
-});
-
 //* Navbar
 let an = new TimelineMax({ paused: true });
 
@@ -77,4 +55,27 @@ $(document).ready(function () {
       $(".nav_container").css("background-color", "#dfe8e0");
     }
   );
+});
+
+//? Container animate from here!!!
+tl.from(".logo, .menu__open", {
+  opacity: 0,
+  ease: "power2.easeOut",
+  y: -250,
+  duration: 1.5,
+  stagger: 1,
+});
+tl.from(".line-links, .menu-links-left", 2, {
+  opacity: 0,
+  ease: "power2.easeOut",
+  y: 50,
+  stagger: 1,
+});
+
+// * Main Container Animation
+tl.from(" ", {
+  opacity: 0,
+  ease: "power3.out",
+  duration: 2,
+  y: 50,
 });
