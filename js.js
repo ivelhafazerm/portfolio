@@ -58,24 +58,22 @@ $(document).ready(function () {
 });
 
 //? Container animate from here!!!
-tl.from(".logo, .menu__open", {
+tl.from(" .clonex,.intro, .hero-desc, .button-hero", {
   opacity: 0,
   ease: "power2.easeOut",
-  y: -250,
-  duration: 1.5,
+  y: 50,
+  stagger: 0.5,
+});
+tl.from(".logo, .menu__open ", {
+  opacity: 0,
+  ease: "power2.easeOut",
+  y: -200,
+  duration: 1,
   stagger: 1,
 });
-tl.from(".line-links, .menu-links-left", 2, {
+tl.from(".line-links, .menu-links-left", {
   opacity: 0,
   ease: "power2.easeOut",
   y: 50,
   stagger: 1,
-});
-
-// * Main Container Animation
-tl.from(" ", {
-  opacity: 0,
-  ease: "power3.out",
-  duration: 2,
-  y: 50,
 });
