@@ -58,22 +58,21 @@ $(document).ready(function () {
 });
 
 //? Container animate from here!!!
-tl.from(" .clonex,.intro, .hero-desc, .button-hero", {
+tl.from(".intro, .hero-desc, .button-hero,.clonex", {
   opacity: 0,
   ease: "power2.easeOut",
   y: 50,
   stagger: 0.5,
-});
-tl.from(".logo, .menu__open ", {
-  opacity: 0,
-  ease: "power2.easeOut",
-  y: -200,
-  duration: 1,
-  stagger: 1,
-});
-tl.from(".line-links, .menu-links-left", {
-  opacity: 0,
-  ease: "power2.easeOut",
-  y: 50,
-  stagger: 1,
-});
+})
+  .from(".logo, .menu__open ", {
+    opacity: 0,
+    ease: "power2.easeOut",
+    y: -100,
+    stagger: 0.5,
+  })
+  .from(".line-links, .menu-links-left", {
+    opacity: 0,
+    ease: "power2.easeOut",
+    y: 50,
+    stagger: 0.5,
+  });
