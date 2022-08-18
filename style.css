@@ -28,6 +28,9 @@ body {
   align-items: center;
   margin-top: 30px;
 }
+.menu__nav a {
+  text-decoration: none;
+}
 .nav-left {
   display: flex;
 }
@@ -41,6 +44,12 @@ body {
   font-size: larger;
   color: #bd93f8;
 }
+.nav-left-text p:hover {
+  text-decoration: line-through;
+}
+.nav-right-text p:hover {
+  text-decoration: line-through;
+}
 .nav-right-text p {
   font-size: larger;
   color: skyblue;
@@ -51,7 +60,7 @@ body {
   align-items: center;
   scale: 1.2;
 }
-.about-nav {
+.project-nav {
   margin-right: 20px;
 }
 .skills-nav {
@@ -110,9 +119,6 @@ ion-icon.gh {
   margin-left: 110px;
   margin-right: 106px;
 }
-.main-wrapper {
-  height: 100vh;
-}
 
 .flex-hero {
   height: 90.2vh;
@@ -159,7 +165,7 @@ ion-icon.gh {
   display: flex;
   align-items: center;
 }
-a {
+.button-hero a {
   color: #fff;
   text-decoration: none;
 }
@@ -226,6 +232,7 @@ img.clonex {
   height: 100vh;
   width: 100%;
   position: relative;
+  background-color: #202020;
 }
 .text-main-pg2 {
   display: flex;
@@ -234,15 +241,44 @@ img.clonex {
   justify-content: center;
   align-items: center;
 }
-.text-main-pg2 h1 {
-  scale: 2;
-  color: #ff78c6;
+.pg2-text-hero {
+  padding-top: 100px;
+  position: absolute;
+  left: 47%;
 }
-
+.pg2-text-hero h1 {
+  color: wheat;
+  font-size: 2rem;
+}
 .page-3 {
   height: 100vh;
   width: 100%;
   position: relative;
+  background-color: #b9da99;
+}
+.pg3-text-hero {
+  padding-top: 100px;
+  position: absolute;
+  left: 45.5%;
+}
+.pg3-text-hero h1 {
+  color: wheat;
+  font-size: 2rem;
+}
+.page-4 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #6a6060;
+}
+.pg4-text-hero {
+  padding-top: 100px;
+  position: absolute;
+  left: 46.3%;
+}
+.pg4-text-hero h1 {
+  color: wheat;
+  font-size: 2rem;
 }
 @media screen and(max-width: 1580px) {
   .intro {
