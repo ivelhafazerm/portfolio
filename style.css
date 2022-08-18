@@ -17,118 +17,49 @@ body {
 *::-webkit-scrollbar {
   display: none;
 }
-.menu__logo {
+
+.menu__nav {
   width: 100%;
   height: 70px;
   position: fixed;
   z-index: 200000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
-.menu__logo > .logo {
-  top: -10px;
-  left: 0;
-  margin-top: 40px;
-  margin-left: 110px;
-  position: absolute;
-  color: #fff;
-  font-weight: bolder;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-family: "Pulang";
+.nav-left {
+  display: flex;
 }
-.logo.logo-svg {
-  cursor: pointer;
+.nav-left-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.2;
 }
-
-.menu__open ion-icon {
-  transform: scale(2);
-  margin-bottom: 3px;
-  display: block;
+.nav-left-text p {
+  font-size: larger;
+  color: #bd93f8;
 }
-
-.menu__open > .more {
-  width: 30px;
+.nav-right-text p {
+  font-size: larger;
+  color: skyblue;
 }
-.menu_open,
-.menu_close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 40px;
-  margin-right: 110px;
-  font-size: 20px;
-  text-decoration: underline;
-  cursor: pointer;
+.nav-right-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.2;
 }
-.menu_close ion-icon {
-  color: #000;
-  transform: scale(2);
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -o-transform: scale(2);
+.about-nav {
+  margin-right: 20px;
 }
-.nav_container {
-  position: fixed;
-  top: -1000%;
-  opacity: 0;
-  width: 100%;
-  height: 100vh;
-  /* background-image: url(./img/bg-2.jpg); */
-  background-color: aliceblue;
-  object-fit: cover;
-  text-align: center;
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  -webkit-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  -moz-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  -ms-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  -o-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 9999999999999999999;
+.skills-nav {
+  margin-left: 20px;
 }
-
-.menu {
-  padding: 12vh 0 24vh;
-  z-index: 9999999999998;
-}
-
-.menu__links {
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-  font-size: 5vw;
-  transition: opacity 0.1s;
-}
-
-.menu__img {
-  position: relative;
-  top: 10px;
-  padding: 0 40px;
-  z-index: 2;
-  pointer-events: none;
-  height: 10vh;
-  max-height: 600px;
-  opacity: 1;
-  transform: scale(0);
-}
-.menu__item {
-  margin-top: 50px;
-  margin-right: 200px;
-  margin-left: 200px;
-}
-.menu__item:hover > .menu__img {
-  transform: scale(4);
-  transition: all 0.3s;
-}
-.menu__item:hover > a {
-  text-decoration: line-through;
-}
-.menu__item:hover > .menu-left {
-  transition: all 0.3s ease;
-  transform: translateX(-50px);
-}
-.menu__item:hover > .menu-right {
-  transition: all 0.3s ease;
-  transform: translateX(50px);
+.logo-svg {
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 /*? left links  */
@@ -177,7 +108,7 @@ ion-icon.gh {
 .main-container {
   padding-top: 100px;
   margin-left: 110px;
-  margin-right: 110px;
+  margin-right: 106px;
 }
 .main-wrapper {
   height: 100vh;
@@ -199,7 +130,7 @@ ion-icon.gh {
 }
 .text-hero {
   margin-top: 300px;
-  margin-left: 250px;
+  margin-left: 200px;
   color: white;
   transform: scale(1.3);
   -webkit-transform: scale(1.3);
@@ -222,6 +153,7 @@ ion-icon.gh {
 .hero-desc {
   font-size: 20px;
   width: 350px;
+  font-size: 15px;
 }
 .button-hero {
   display: flex;
@@ -285,9 +217,10 @@ button.resume {
 }
 img.clonex {
   top: 150px;
-  right: 200px;
+  right: 120px;
   position: absolute;
   clip-path: circle();
+  scale: 1;
 }
 .page-2 {
   height: 100vh;
@@ -306,6 +239,11 @@ img.clonex {
   color: #ff78c6;
 }
 
+.page-3 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
 @media screen and(max-width: 1580px) {
   .intro {
     font-size: 25px;
