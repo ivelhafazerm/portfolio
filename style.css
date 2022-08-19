@@ -14,6 +14,10 @@ body {
 body {
   background-color: #383a59;
 }
+*::selection {
+  color: #ff78c6;
+  background-color: #383a59;
+}
 *::-webkit-scrollbar {
   display: none;
 }
@@ -120,6 +124,18 @@ ion-icon.gh {
   margin-right: 106px;
 }
 
+.pg1-text-hero {
+  padding-top: 100px;
+  position: absolute;
+  top: 52%;
+  left: 47%;
+}
+.pg1-text-hero h1 {
+  opacity: 0.1;
+  color: white;
+  scale: 5;
+  letter-spacing: 10px;
+}
 .flex-hero {
   height: 90.2vh;
   width: 100%;
@@ -232,53 +248,95 @@ img.clonex {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #202020;
-}
-.text-main-pg2 {
-  display: flex;
-  height: 50px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 .pg2-text-hero {
   padding-top: 100px;
   position: absolute;
+  top: 52%;
   left: 47%;
 }
 .pg2-text-hero h1 {
-  color: wheat;
-  font-size: 2rem;
+  opacity: 0.1;
+  color: white;
+  scale: 5;
+  letter-spacing: 10px;
 }
+.skills-group {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  height: 40rem;
+  width: 95.8rem;
+}
+.skills-group-2 {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  height: 40rem;
+  width: 95.8rem;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  background-color: #4c4e75;
+  align-items: center;
+  justify-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.skills-card img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  scale: 1;
+}
+.skills-card h3 {
+  color: #ffb86c;
+}
+
 .page-3 {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #b9da99;
 }
 .pg3-text-hero {
   padding-top: 100px;
   position: absolute;
-  left: 45.5%;
+  top: 35%;
+  left: 47%;
 }
 .pg3-text-hero h1 {
-  color: wheat;
-  font-size: 2rem;
+  opacity: 0.1;
+  color: white;
+  scale: 5;
+  letter-spacing: 10px;
 }
 .page-4 {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #6a6060;
 }
 .pg4-text-hero {
   padding-top: 100px;
   position: absolute;
-  left: 46.3%;
+  top: 35%;
+  left: 47%;
 }
 .pg4-text-hero h1 {
-  color: wheat;
-  font-size: 2rem;
+  opacity: 0.1;
+  color: white;
+  scale: 5;
+  letter-spacing: 10px;
 }
 @media screen and(max-width: 1580px) {
   .intro {
